@@ -65,7 +65,7 @@ https://packages.adoptium.net/ui/repos/tree/General after clicking the
 cat <<EOF > /etc/yum.repos.d/adoptium.repo
 [Adoptium]
 name=Adoptium
-baseurl=https://packages.adoptium.net/artifactory/rpm/centos/$releasever/$basearch
+baseurl=https://packages.adoptium.net/artifactory/rpm/centos/\$releasever/\$basearch
 enabled=1
 gpgcheck=1
 gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
